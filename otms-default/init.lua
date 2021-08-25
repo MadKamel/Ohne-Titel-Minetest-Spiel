@@ -1,8 +1,10 @@
 -- Importieren locale.
-local S = minetest.get_translator("otms-default")
+-- Import locale.
+local S = minetest.get_translator("otms_default")
 
 
 -- Dies ist etwas Code von das default mod auf minetest_game.
+-- This is some code from the default mod in minetest_game.
 minetest.register_on_joinplayer(function(player)
 	-- Set formspec prepend
 	local formspec = [[
@@ -40,4 +42,5 @@ default.gui_survival_form = "size[8,8.5]"..
 			"listring[current_player;craft]"..
 			default.get_hotbar_bg(0,4.25)
 
+-- I want to replace this code with my own sometime.
 -- Ich wolle zu lösche dies Code, schreibt mein eigenes.
