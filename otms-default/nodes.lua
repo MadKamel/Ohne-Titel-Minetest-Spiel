@@ -1,3 +1,5 @@
+local S = minetest.get_translator("otms_default")
+
 minetest.register_node("otms_default:stone", {
 	description = S("A block of stone."),
 	tiles = {"omts_stone.png"},
