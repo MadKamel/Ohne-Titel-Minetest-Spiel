@@ -1,3 +1,7 @@
+-- Importieren locale.
+local S = minetest.get_translator("otms-default")
+
+
 -- Dies ist etwas Code von das default mod auf minetest_game.
 minetest.register_on_joinplayer(function(player)
 	-- Set formspec prepend
