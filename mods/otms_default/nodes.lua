@@ -10,6 +10,13 @@ minetest.register_node("otms_default:reeds", {
 	is_ground_content = true
 })
 
+minetest.register_node("otms_default:sand", {
+	description = S("Sand"),
+	tiles = {"otms_sand.png"},
+	groups = {sand = 1},
+	is_ground_content = true
+})
+
 minetest.register_node("otms_default:topsoil", {
 	description = S("Topsoil"),
 	tiles = {"otms_topsoil.png"},
