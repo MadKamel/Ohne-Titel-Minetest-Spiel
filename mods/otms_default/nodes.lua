@@ -10,6 +10,15 @@ minetest.register_node("otms_default:reeds", {
 	is_ground_content = true
 })
 
+minetest.register_node("otms_default:grass", {
+	description = S("Grass"),
+	drawtype = "plantlike",
+	paramtype = "light",
+	tiles = {"otms_grass.png"},
+	groups = {plant = 1, grass = 1, mature_plant = 1},
+	is_ground_content = true
+})
+
 minetest.register_node("otms_default:sand", {
 	description = S("Sand"),
 	tiles = {"otms_sand.png"},
