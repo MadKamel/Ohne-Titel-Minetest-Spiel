@@ -26,6 +26,14 @@ minetest.register_decoration({
 	y_min = 1,
 })
 
+minetest.register_decoration({
+	decoration = "otms_default:grass",
+	deco_type = "simple",
+	place_on = "otms_default:topsoil",
+	fill_ratio = 0.1,
+	y_min = 1,
+})
+
 
 
 -- register biomes
@@ -33,7 +41,7 @@ minetest.register_decoration({
 minetest.register_biome({
 	name = "dirtland",
 	node_top = "biomes_topsoil",
-	depth_top = 1,
+	depth_top = 3,
 	heat_point = 0,
 	humidity_point = 50,
 })
