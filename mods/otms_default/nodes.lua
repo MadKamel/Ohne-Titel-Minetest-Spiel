@@ -18,6 +18,15 @@ minetest.register_node("otms_default:grass", {
 	walkable = true,
 })
 
+minetest.register_node("otms_default:grass_eaten", {
+	description = S("Eaten Grass"),
+	drawtype = "plantlike",
+	paramtype = "light",
+	tiles = {"otms_grass_eaten.png"},
+	groups = {plant = 1},
+	walkable = true,
+})
+
 minetest.register_node("otms_default:sand", {
 	description = S("Sand"),
 	tiles = {"otms_sand.png"},
