@@ -15,7 +15,7 @@ minetest.register_node("otms_default:grass", {
 	paramtype = "light",
 	tiles = {"otms_grass.png"},
 	groups = {plant = 1},
-	walkable = true,
+	walkable = false,
 })
 
 minetest.register_node("otms_default:grass_eaten", {
@@ -24,7 +24,7 @@ minetest.register_node("otms_default:grass_eaten", {
 	paramtype = "light",
 	tiles = {"otms_grass_eaten.png"},
 	groups = {plant = 1},
-	walkable = true,
+	walkable = false,
 })
 
 minetest.register_node("otms_default:sand", {
