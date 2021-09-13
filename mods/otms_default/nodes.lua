@@ -9,24 +9,6 @@ minetest.register_node("otms_default:reeds", {
 	groups = {plant = 1},
 })
 
-minetest.register_node("otms_default:grass", {
-	description = S("Grass"),
-	drawtype = "plantlike",
-	paramtype = "light",
-	tiles = {"otms_grass.png"},
-	groups = {plant = 1},
-	walkable = false,
-})
-
-minetest.register_node("otms_default:grass_eaten", {
-	description = S("Eaten Grass"),
-	drawtype = "plantlike",
-	paramtype = "light",
-	tiles = {"otms_grass_eaten.png"},
-	groups = {plant = 1},
-	walkable = false,
-})
-
 minetest.register_node("otms_default:sand", {
 	description = S("Sand"),
 	tiles = {"otms_sand.png"},
@@ -116,6 +98,7 @@ minetest.register_node("otms_default:water_flowing", {
 	},
 	use_texture_alpha = "blend",
 	paramtype = "light",
+	paramtype2 = "flowingliquid",
 	groups = {water = 1,  liquid = 3},
 	walkable = false,
 	pointable = false,
